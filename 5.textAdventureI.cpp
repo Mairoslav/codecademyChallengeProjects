@@ -44,7 +44,6 @@ int main() {
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // clear the input buffer
             std::cout << std::endl << "Invalid input, please enter number 1 or 2: \n";
         } else {
-            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // clear any extra input
             break;
         }
     } while (true);
@@ -82,7 +81,6 @@ int main() {
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // clear the input buffer
             std::cout << std::endl << "Invalid input, please enter number from 1 to 5: ";
         } else {
-            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // clear any extra input
             break;
         }
     } while (true);
@@ -113,7 +111,6 @@ int main() {
                     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // clear the input buffer
                     std::cout << "Invalid input, please enter number from 1 to 3:" << std::endl;
                 } else {
-                    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // clear any extra input
                     break;
                 }
             } while (true);
@@ -156,7 +153,6 @@ int main() {
                     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // clear the input buffer
                     std::cout << "Invalid input, please enter number from 1 to 3:" << std::endl;
                 } else {
-                    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // clear any extra input
                     break;
                 }
             } while (true);
@@ -199,7 +195,6 @@ int main() {
                     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // clear the input buffer
                     std::cout << "Invalid input, please enter number from 1 to 3:" << std::endl;
                 } else {
-                    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // clear any extra input
                     break;
                 }
             } while (true);
@@ -242,7 +237,6 @@ int main() {
                     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // clear the input buffer
                     std::cout << "Invalid input, please enter number from 1 to 3:" << std::endl;
                 } else {
-                    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // clear any extra input
                     break;
                 }
             } while (true);
@@ -285,7 +279,6 @@ int main() {
                     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // clear the input buffer
                     std::cout << "Invalid input, please enter number from 1 to 3:" << std::endl;
                 } else {
-                    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // clear any extra input
                     break;
                 }
             } while (true);
@@ -303,13 +296,9 @@ int main() {
 				printASCII(fileName);
                 std::cout << "Get inpired by Whale. Whales are known for their complex social structures and emotional depth, suggesting qualities of empathy, compassion, and understanding. Whales are revered in many cultures for their spiritual significance, symbolizing a connection to the mysteries of the universe and the depths of the subconscious. Whale: Symbolizes strength, power, depth, empathy, compassion, spiritual connection, and emotional depth.\n" << std::endl;
             } 
-            
             break;
-            
     }
-    
     return 0;
-    
 }
 
 /* to address the issue with the infinite loop caused by invalid input, we need to clear the input buffer whenever the user provides invalid input. This will ensure that any extra characters entered by the user are removed from the input buffer, preventing the program from getting stuck in a loop. 
